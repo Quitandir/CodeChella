@@ -1,0 +1,137 @@
+.banner-setores {
+    height: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-setores720.svg');
+    mix-blend-mode: normal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.mapa__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    justify-content: center;    
+    
+}
+
+.mapa__texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.imagem-mapa {
+    width: -webkit-fill-available;
+
+}
+
+.mapa__legenda {
+    padding: 1em 2em;
+    
+    
+}
+
+.legenda__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.legenda__item {
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+}
+
+.legenda__imagem {
+    margin-right: 30px;
+}
+
+.detalhes__container {
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 720px) {
+    .mapa__legenda {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .banner-setores {
+        background-image: url("../assets/banner-setores1440.svg");
+        height: 400px;
+        mix-blend-mode: normal;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mapa-evento {
+        display: flex;
+        flex-direction: row;
+        padding: 1.25em 10%;
+    }
+
+    .imagem-mapa {
+        width: 690px;
+    }
+
+    .mapa__legenda {
+        margin-left: 0;
+        margin-top: 115px;
+    }
+
+    .legenda__titulo, .legenda__item {
+        margin-bottom: 10px;
+    }
+
+    .principal__titulo {
+        font-size: 40px;
+    }
+
+    .detalhes-evento {
+        display: flex;
+        align-items: flex-start;
+        padding: 2em 5%;
+        column-gap: 5em;
+    }
+
+    .detalhes-evento > :nth-child(2) {
+        margin-top: 100px;
+    }
+
+    .detalhes__container {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal__texto {
+        text-align: center;
+    }
+}

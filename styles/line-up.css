@@ -1,0 +1,131 @@
+.line-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-up__titulo {
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+    margin: 1em 0;
+}
+
+.line-up__sabado, .line-up__domingo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dia__titulo {
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: white;
+    background-color: var(--verde-escuro);
+    padding: 0.25em;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.banda__h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: white;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.banda__h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: white;
+    text-align: center;
+    margin: 0.4em 0;
+    
+}
+
+.banda__h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    margin: 0.3em 0;
+}
+
+.banda__h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    margin: 0.3em 0;
+}
+
+.line-up__dia {
+    display: flex;
+}
+
+.linha-lineup {
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+    .line-up__sabado, .line-up__domingo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 2em;
+        justify-content: space-evenly;
+
+    }
+
+    .dia__titulo {
+        margin: 1em 3em;
+    }
+
+    .banda__h1 {
+        margin: 1em 3em;
+    }
+
+    .banda__h4 {
+        margin: 0.3em 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .dia__titulo {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 62px;
+        margin: 0 1em;
+    }
+
+    .linha-lineup {
+        display: block;
+    }
+
+    .line-up__sabado, .line-up__domingo {
+        margin-bottom: 2em;
+        row-gap: 1em;
+    }
+
+    .banda__h1 {
+        margin: 1em 10em;
+    }
+}

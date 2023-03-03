@@ -1,0 +1,32 @@
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/sobre.css);
+@import url(./styles/line-up.css);
+@import url(./styles/rodape.css);
+@import url(./styles/experiencia.css);
+@import url(./styles/mapa-setores.css);
+
+
+:root {
+    --cor-gradiente: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+    --verde-turquesa: #304968;
+    --verde-claro: #36C1A0;
+    --cinza: #B6BCFF;
+    --roxo-boreal: #4650BD;
+    --verde-escuro: #008364;
+    --fonte-titulo: "Calistoga";
+    --fonte-texto: "Raleway"
+}
+
+body, html {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cor-gradiente);
+    padding: 1.25em;    
+}
+
