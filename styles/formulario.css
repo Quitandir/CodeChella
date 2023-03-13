@@ -1,0 +1,116 @@
+.banner-form {
+    height: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-form720.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__titulo {
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1em auto;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.formulario {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.3em;
+    color: white;
+}
+
+#nome-completo, #email, #nascimento, #tipo-ingresso {
+    width: 100%;
+    height: 48px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #444444;
+    margin-bottom: 1em;
+}
+
+.botao-avancar {
+    align-self: center;
+    background-image: url('../assets/seta-avancar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    width: 164px;
+    height: 56px;
+    background-color: #4650BD;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    color: white;
+    padding: 0 1em;
+    font-family: 'Raleway';
+
+}
+
+@media screen and (min-width: 720px) {
+    form {
+        padding: 0 2em;
+    }
+
+    #nascimento {
+        width: 70%;
+    }
+
+    .formulario__titulo {
+        font-size: 42px;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner-form {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-form1440.svg');
+        height: 400px;
+    }
+
+    form {
+        width: 60%;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container__ingresso, .container__nascimento {
+        width: 48%;
+    }
+
+    #nascimento {
+        width: 100%;
+    }
+
+    .botao-avancar {
+        margin: auto;
+    }
+
+}

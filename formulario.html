@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella - A Experiência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="#" class="cabecalho__logo"><img src="./assets/logo.svg" alt="Logo do CodeChella"></a>
+        <input type="checkbox" id="menu" class="cabecalho__botao">
+        <label for="menu" class="menu__rotulo">
+            <span class="cabecalho__menu-hamburguer"></span>
+        </label>
+
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">A experiência</a>
+            </li>
+            <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Mapa de Setores</a>
+            </li>
+            <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Informações</a>
+            </li>
+            <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Ingresso</a>
+            </li>
+        </ul>
+    </header>
+    <div class="banner-form"></div>
+    <main>
+        <h2 class="formulario__titulo">Preencha o formulário a seguir:</h2>
+        <form>
+            <label for="nome-completo" class="formulario">Nome Completo:</label>
+            <input type="text" name="nome-completo" id="nome-completo">
+
+            <label for="email" class="formulario">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <div class="container__ingresso">
+                <label for="tipo-ingresso" class="formulario">Tipo de ingresso</label>
+                <select name="tipo-ingresso" id="tipo-ingresso" aria-placeholder="Tipo de ingresso">
+                    <option value="pista-premium">Pista premium</option>
+                    <option value="pista-comum">Pista comum</option>
+                    <option value="cadeiras-terreo">Cadeiras terreo</option>
+                    <option value="cadeiras-superiores">Cadeiras superiores</option>
+                    <option value="rampas">Rampas</option>
+                </select>
+
+            </div>
+            <div class="container__nascimento">
+                <label for="nascimento" class="formulario">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+            </div>
+
+            <input type="submit" value="Avançar!" class="botao-avancar">
+
+
+
+        </form>
+    </main>
+    <footer>
+
+        <div class="rodape">
+            <div class="rodape__container">
+                <a href="#" class="rodape__logo"><img src="./assets/logo.svg" alt="logo CodeChella"></a>
+                <p class="rodape__texto">Acesse nossas redes:</p>
+                <div class="logos-redes">
+                    <a href="#"><img src="./assets/logo-whatsapp.svg" alt="Logo do Whatsapp"></a>
+                    <a href="#"><img src="./assets/logo-twitch.svg" alt="Logo da Twitch"></a>
+                    <a href="#"><img src="./assets/logo-insta.svg" alt="Logo do Instagram"></a>
+                    <a href="#"><img src="./assets/logo-twitter.svg" alt="Logo do Twitter"></a>
+                </div>
+            </div>
+
+            <p class="rodape__texto">Desenvolvido por Moisés Carniel. Sem fins comerciais.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

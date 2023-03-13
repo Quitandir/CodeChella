@@ -1,0 +1,110 @@
+.banner-ingresso {
+    height: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-ingresso360.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ingresso__titulo {
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+    margin: 1em auto;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.container__ingresso {
+    background: var(--cor-gradiente);
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__dados {
+    text-align: center;
+}
+
+.ingresso__qrcode {
+    padding: 2em;
+}
+
+.ingresso__nome {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.ingresso__texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 720px) {
+    .banner-ingresso {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-ingresso720.svg');
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container__ingresso {
+        padding: 2em 2em;
+        margin: 0 1em;
+    }
+
+    .ingresso__qrcode {
+        padding: 6em;
+    }
+
+    .ingresso__titulo {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container__ingresso {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-self: center;
+        width: 50%;
+    
+    }
+
+    .container__header {
+        grid-area: 1 / 1 / 2 / 6;
+        height: 32px;
+    }
+
+    .ingresso__qrcode {
+        grid-area: 2 / 1 / 4 / 3;
+        padding: 0;
+    }
+
+    .container__dados {
+        grid-area: 2 / 3 / 4 / 6;
+        text-align: left;
+    }
+
+}
