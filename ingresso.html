@@ -18,23 +18,23 @@
 
 <body>
     <header class="cabecalho">
-        <a href="#" class="cabecalho__logo"><img src="./assets/logo.svg" alt="Logo do CodeChella"></a>
+        <a href="./main.html" class="cabecalho__logo"><img src="./assets/logo.svg" alt="Logo do CodeChella"></a>
         <input type="checkbox" id="menu" class="cabecalho__botao">
-        <label for="menu" class="menu__rotulo">
+        <label for="menu" class="menu__rotulo">                
             <span class="cabecalho__menu-hamburguer"></span>
         </label>
-
-        <ul class="lista-menu">
+    
+        <ul class="lista-menu">            
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">A experiência</a>
+                <a href="./experiencia.html" class="lista-menu__link">A experiência</a>                
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Mapa de Setores</a>
+                <a href="./mapa-setores.html" class="lista-menu__link">Mapa de Setores</a>
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Informações</a>
+                <a href="./faq.html" class="lista-menu__link">Informações</a>
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
@@ -52,9 +52,9 @@
             </div>
             <img src="./assets/qrcode.svg" alt="QR code" class="ingresso__qrcode">
             <div class="container__dados">
-                <p class="ingresso__nome">Moni Hillman</p>
+                <p class="ingresso__nome" data-nome></p>
                 <p class="ingresso__texto">Ingresso Cortesia</p>
-                <p class="ingresso__texto">Setor Pista</p>
+                <p class="ingresso__texto" data-setor>Setor Pista</p>
                 <p class="ingresso__texto">Data: 11/03</p>
                 <p class="ingresso__texto">Local: São Paulo - SP</p>
             </div>
@@ -76,7 +76,7 @@
         </div>
 
     </footer>
-
+<script src="./js/cria-ingresso.js"></script>
 </body>
 
 </html>

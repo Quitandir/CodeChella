@@ -18,23 +18,23 @@
 
 <body>
     <header class="cabecalho">
-        <a href="#" class="cabecalho__logo"><img src="./assets/logo.svg" alt="Logo do CodeChella"></a>
+        <a href="./main.html" class="cabecalho__logo"><img src="./assets/logo.svg" alt="Logo do CodeChella"></a>
         <input type="checkbox" id="menu" class="cabecalho__botao">
-        <label for="menu" class="menu__rotulo">
+        <label for="menu" class="menu__rotulo">                
             <span class="cabecalho__menu-hamburguer"></span>
         </label>
-
-        <ul class="lista-menu">
+    
+        <ul class="lista-menu">            
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">A experiência</a>
+                <a href="./experiencia.html" class="lista-menu__link">A experiência</a>                
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Mapa de Setores</a>
+                <a href="./mapa-setores.html" class="lista-menu__link">Mapa de Setores</a>
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Informações</a>
+                <a href="./faq.html" class="lista-menu__link">Informações</a>
             </li>
             <li class="menu__linha"><img src="./assets/linha-menu.svg" alt=""></li>
             <li class="lista-menu__item">
@@ -48,28 +48,30 @@
         <form>
             <label for="nome-completo" class="formulario">Nome Completo:</label>
             <input type="text" name="nome-completo" id="nome-completo">
+            <span class="erro-nome"></span>
 
             <label for="email" class="formulario">Email:</label>
             <input type="email" name="email" id="email">
+            <span class="erro-email"></span>
 
-            <div class="container__ingresso">
+            <div class="container__tipo-ingresso">
                 <label for="tipo-ingresso" class="formulario">Tipo de ingresso</label>
                 <select name="tipo-ingresso" id="tipo-ingresso" aria-placeholder="Tipo de ingresso">
-                    <option value="pista-premium">Pista premium</option>
-                    <option value="pista-comum">Pista comum</option>
-                    <option value="cadeiras-terreo">Cadeiras terreo</option>
-                    <option value="cadeiras-superiores">Cadeiras superiores</option>
-                    <option value="rampas">Rampas</option>
+                    <option value="Pista premium">Pista premium</option>
+                    <option value="Pista comum">Pista comum</option>
+                    <option value="Cadeiras terreo">Cadeiras terreo</option>
+                    <option value="Cadeiras superiores">Cadeiras superiores</option>
+                    <option value="Rampas">Rampas</option>
                 </select>
 
             </div>
             <div class="container__nascimento">
                 <label for="nascimento" class="formulario">Data de nascimento:</label>
                 <input type="date" name="nascimento" id="nascimento">
-
+                <span class="erro-nascimento"></span>
             </div>
 
-            <input type="submit" value="Avançar!" class="botao-avancar">
+            <input type="submit" value="Avançar!" class="botao-avancar" data-botao>
 
 
 
@@ -93,7 +95,7 @@
         </div>
 
     </footer>
-
+    <script src="./js/validacao-formulario.js" type="module"></script>
 </body>
 
 </html>

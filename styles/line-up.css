@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 3em;
 }
 
 .line-up__titulo {
@@ -78,10 +79,15 @@
 
 .line-up__dia {
     display: flex;
+    text-align: center;
 }
 
 .linha-lineup {
     display: none;
+}
+
+.line-up__sabado, .line-up__domingo {
+    text-align: center;
 }
 
 @media screen and (min-width: 720px) {
@@ -99,7 +105,7 @@
     }
 
     .banda__h1 {
-        margin: 1em 3em;
+        margin: 1em 2em;
     }
 
     .banda__h4 {

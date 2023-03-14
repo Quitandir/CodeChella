@@ -71,6 +71,16 @@ form {
 
 }
 
+.erro-nome, .erro-nascimento, .erro-email {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: red;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
 @media screen and (min-width: 720px) {
     form {
         padding: 0 2em;
@@ -101,7 +111,7 @@ form {
         justify-content: space-between;
     }
 
-    .container__ingresso, .container__nascimento {
+    .container__tipo-ingresso, .container__nascimento {
         width: 48%;
     }
 
