@@ -132,6 +132,7 @@
     }
 
     .banda__h1 {
-        margin: 1em 10em;
+        margin: 1em 0em;
+        width:100%;
     }
 }
