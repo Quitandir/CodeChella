@@ -6,6 +6,7 @@ As primeiras duas semanas tinham como objetivo o desenvolvimento e estilização
 
 As últimas duas semanas foram o tempo dedicado para implementação de validações dos campos do formulário e geração dinâmica dos dados do ingresso com base nos dados inseridos no formulário. 
 
+![Imagem da página inicial](https://github.com/Quitandir/CodeChella/blob/semana-3/assets/imagem-readme.png)
 
 
 ## Acesso
