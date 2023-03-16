@@ -1,6 +1,6 @@
 .banner-experiencia {
     height: 50%;
-    background-image: url("../assets/banner-xp-72o.svg");
+    background-image: url("../assets/banner-xp-360.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,6 +33,14 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 2em;
+}
+
+@media screen and (min-width: 720px) {
+
+    .banner-experiencia {
+        background-image: url("../assets/banner-xp-1440.svg");
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 1440px) {

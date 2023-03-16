@@ -1,9 +1,10 @@
 .banner-ingresso {
     height: 50%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-ingresso360.svg');
+    background: url('../assets/banner-ingresso360.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    mix-blend-mode: normal;
 }
 
 .ingresso__titulo {
@@ -59,7 +60,7 @@
 
 @media screen and (min-width: 720px) {
     .banner-ingresso {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-ingresso720.svg');
+        background: url('../assets/banner-ingresso720.svg');
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
@@ -94,7 +95,7 @@
 
     .container__header {
         grid-area: 1 / 1 / 2 / 6;
-        height: 32px;
+        height: 70px;
     }
 
     .ingresso__qrcode {

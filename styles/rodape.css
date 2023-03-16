@@ -20,7 +20,7 @@ footer {
     width: 100%;
     height: 338px;
     object-fit: cover;
-    
+
 }
 
 .rodape__logo {
@@ -40,20 +40,26 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-    
-    
+
+
     .rodape {
         display: flex;
         flex-direction: row;
         align-items: center;
         column-gap: 10em;
+        margin: 3em 8em;
     }
 
-    .logos-redes {
-        margin-bottom: 2em;
+    .rodape__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .rodape__logo {
         size: 120%;
+        width: 100%;
+        margin: 0;
     }
 }

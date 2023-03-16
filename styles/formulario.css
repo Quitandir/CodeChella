@@ -1,9 +1,10 @@
 .banner-form {
     height: 50%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-form720.svg');
+    background: url('../assets/banner-form360.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    mix-blend-mode: normal;
 
 }
 
@@ -68,6 +69,7 @@ form {
     color: white;
     padding: 0 1em;
     font-family: 'Raleway';
+    margin-top: 1em;
 
 }
 
@@ -82,12 +84,23 @@ form {
 }
 
 @media screen and (min-width: 720px) {
+
+    .banner-form {
+        background: url('../assets/banner-form1440.svg');
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: normal;
+    }
+
     form {
         padding: 0 2em;
     }
 
     #nascimento {
         width: 70%;
+        margin-right: 30%;
     }
 
     .formulario__titulo {
@@ -98,7 +111,7 @@ form {
 
 @media screen and (min-width: 1440px) {
     .banner-form {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-form1440.svg');
+        background: url('../assets/banner-form1440.svg');
         height: 400px;
     }
 

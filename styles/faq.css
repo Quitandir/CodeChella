@@ -1,10 +1,10 @@
 .banner-faq {
     height: 50%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-faq720.svg');
+    background: url('../assets/banner-faq720.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .faq__titulo {
@@ -73,7 +73,7 @@
 
 @media screen and (min-width: 1440px) {
     .banner-faq {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-faq1440.svg');
+        background: url('../assets/banner-faq1440.svg');
         height: 400px;
     }
 

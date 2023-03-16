@@ -1,6 +1,6 @@
 .banner-setores {
     height: 50%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner-setores720.svg');
+    background: url('../assets/banner-setores720.svg');
     mix-blend-mode: normal;
     background-position: center;
     background-repeat: no-repeat;
