@@ -11,7 +11,7 @@ As últimas duas semanas foram o tempo dedicado para implementação de validaç
 
 ## Acesso
 
-
+https://quitandir.github.io/CodeChella/
 
 ## Tecnologias
 
